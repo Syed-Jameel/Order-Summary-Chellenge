@@ -6,10 +6,13 @@
 
 body {
     font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
 }
 
 .card {
@@ -123,5 +126,11 @@ body {
     }
 }
 
+.attribution { 
+    font-size: 11px; text-align: center;
+    height: 5vh;
+}
+.attribution a{
+     color: hsl(228, 45%, 44%); 
 
-
+}
