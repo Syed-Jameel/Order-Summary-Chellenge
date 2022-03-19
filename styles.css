@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 380px;
+    height: 560px;
+    border-radius: 1rem;
+    box-shadow: 1px 5px 10px hsl(224, 23%, 80%);
+    background-color: white;
+}
+
+.card .card-header img {
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.card .card-body h1 {
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.card .card-body p {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    padding:1rem  3rem;
+    font-weight: 500;
+    font-size: 0.925rem;
+    line-height: 1.5rem;
+}
+
+.card .card-body .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.row .col-1 {
+    display: flex;
+    align-items: center;
+}
+
+.row .col-1 div span {
+    display: block;
+    padding-left: 1rem;
+}
+
+.row .col-1 div .plan {
+   font-size: 0.9rem;
+   font-weight: 900;
+   color: hsl(223, 47%, 23%);
+}
+
+.row .col-1 div .price {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    padding-top: 0.2rem;
+}
+
+.row .col-2 a {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color:hsl(245, 75%, 52%);
+}
+
+.card-body .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.card-body .btn button {
+    padding: 0.8rem;
+    width: 80%;
+    border: 0px;
+    outline: none;
+    border-radius: 0.5rem;
+    color: hsl(225, 100%, 98%);
+    font-weight: 700;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 10px 10px hsl(224, 23%, 80%);
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card .card-footer {
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width:500px) {
+    body {
+        background: url(./images/pattern-background-desktop.svg) no-repeat;
+        background-size: contain;
+        background-color: hsl(225, 100%, 94%);
+    }
+}
+
+@media screen and (max-width:500px) {
+    body {
+        background: url(./images/pattern-background-mobile.svg) no-repeat;
+        background-size: contain;
+        background-color: hsl(225, 100%, 94%);
+        margin: 1rem;
+    }
+}
+
+
+
